@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(0.45turn, #3f87a6, #ebf8e1, #e38251);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #605b5b;
+}
+
+.topnav nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.topnav  h1 {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px ;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav  h1:hover {
+  color: #e38251;
+  cursor: pointer;
+  text-shadow: #FC0 0 1px;
+}
+
+.topnav nav a:hover{
+  color: #e38251;
+  text-shadow: rgba(255, 204, 0, 0.623) 0 1px;  
+  text-decoration: underline;
+  transition: 0.3s;
+
+}
+
+
+
+
+h1 {
+  color: #333;
+  margin: 0;
+}
+
+.welcome-box h1{
+  color: #f2f2f2;
+  font-family:monospace;
+}
+.welcome-box h1 span{
+  color: red;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+  
+  
+@media screen and (max-width: 768px) {
+
+  .topnav nav a {
+    display: block;
+    padding: 10px;
+    text-align: right;
+}
+
+}
+  
+
+  
+ 

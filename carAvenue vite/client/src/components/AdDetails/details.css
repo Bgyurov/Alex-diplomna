@@ -1,0 +1,68 @@
+#vehicle-details {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 980px; /* Limits the width on larger screens */
+    margin: 30px auto; /* Reduced margin for smaller screens */
+    padding: 10px; /* Add padding for better edge spacing */
+    background-color: aliceblue;
+}
+
+#vehicle-details > h1 {
+    font-size: 36px; /* Smaller font size on smaller screens */
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.vehicle-img {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0; /* Adjust margin */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.info-section, .vehicle-header, .vehicle-summary, .text {
+    padding: 15px; /* Adjust padding */
+}
+
+.specs, .price, .phone, .type {
+    font-size: 16px; /* Smaller font size for better readability */
+    padding: 5px; /* Smaller padding */
+}
+
+.buttons, .button, .vote-up, .details {
+    width: 100%; /* Full width buttons */
+    font-size: 18px; /* Larger font size for readability */
+    padding: 10px; /* Adequate padding */
+    margin-top: 10px; /* Space out buttons */
+}
+
+.button, .vote-up, .details {
+    display: block; /* Stack buttons vertically */
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        align-items: center; /* Center align items */
+        justify-content: center;
+        padding: 20px; /* Adequate padding */
+    }
+
+    .vehicle-header, .vehicle-summary {
+        width: 100%; /* Full width */
+    }
+
+    .vehicle-header h1, .vehicle_header h4 {
+        font-size: 20px; /* Smaller font sizes */
+    }
+
+    .text {
+        font-size: 18px; /* Smaller font size for text */
+    }
+
+    .buttons {
+        text-align: center; /* Center align buttons */
+    }
+
+    .button, .vote-up, .details {
+        font-size: 16px; /* Adjust font size */
+    }
+}

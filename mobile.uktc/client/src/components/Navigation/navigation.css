@@ -1,12 +1,13 @@
 body {
   background: linear-gradient(0.45turn, #3f87a6, #ebf8e1, #e38251);
-    background-attachment: fixed;
-    background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .topnav {
   overflow: hidden;
   background-color: #605b5b;
 }
+
 
 .topnav nav a {
   float: right;
@@ -17,58 +18,84 @@ body {
   font-size: 17px;
   cursor: pointer;
 }
-.topnav  h1 {
+.topnav h1 {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px ;
+  padding: 14px 16px;
 
   text-decoration: none;
   font-size: 17px;
 }
-.topnav  h1:hover {
+.topnav h1:hover {
   color: #e38251;
   cursor: pointer;
-  text-shadow: #FC0 0 1px;
+  text-shadow: #fc0 0 1px;
 }
 
-.topnav nav a:hover{
+.topnav nav a:hover {
   color: #e38251;
-  text-shadow: rgba(255, 204, 0, 0.623) 0 1px;  
+  text-shadow: rgba(255, 204, 0, 0.623) 0 1px;
   text-decoration: underline;
   transition: 0.3s;
-
+}
+.menu-button {
+  display: none; /* Hide button on larger screens */
+  float: right;
+  font-size: 30px;
+  color: #f2f2f2;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
+.nav-open,
+.nav-closed {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
 
-
+.nav-open {
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   color: #333;
   margin: 0;
 }
 
-.welcome-box h1{
+.welcome-box h1 {
   color: #f2f2f2;
-  font-family:monospace;
+  font-family: monospace;
 }
-.welcome-box h1 span{
+.welcome-box h1 span {
   color: red;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-  
-  
+
 @media screen and (max-width: 768px) {
+  .topnav nav {
+    display: none;
+  }
+ 
+
+  .menu-button {
+    display: block; 
+    position: relative;
+    top: -60px;
+  }
 
   .topnav nav a {
     display: block;
-    padding: 10px;
-    text-align: right;
-}
+    text-align: center; 
+  }
 
+  .topnav h1,
+  .topnav nav {
+    float: none; 
+    text-align: center;
+  }
 }
-  
-
-  
- 

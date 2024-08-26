@@ -16,7 +16,7 @@ export const adsServiceFactory = (token) => {
  const getLastThree = async () => {
     const result = await request.get(baseUrl)
     const ads  = Object.values(result)
-    const lastThreeAds = ads.slice(-3)
+    const lastThreeAds = ads.slice(-4)
     return lastThreeAds
 }
 const getOneDetails = async (adId) => {

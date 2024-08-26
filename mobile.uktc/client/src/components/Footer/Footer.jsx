@@ -26,7 +26,7 @@ export const Footer = () => {
         <AppBar position="sticky" color="primary">
         <Toolbar>
           <Typography variant="body2" color='secondary' >
-        { `© ${new Date().getFullYear()} CarAvenue. All rights reserved.`}
+        { `© ${new Date().getFullYear()} Mobile.UKTC. All rights reserved.`}
             
           </Typography>
           <IconButton sx={{ marginLeft: '5rem' }} color="inherit" target='_blank' href="https://www.linkedin.com/in/boyan-gyurov-8276b0239/">
@@ -35,9 +35,7 @@ export const Footer = () => {
         <IconButton color="inherit" target='_blank' href="https://github.com/Bgyurov">
           <GitHubIcon />
         </IconButton>
-        <IconButton color="inherit" target='_blank' href="https://gyurov.netlify.app/">
-          <LanguageIcon />
-        </IconButton>
+        
           
         </Toolbar>
   

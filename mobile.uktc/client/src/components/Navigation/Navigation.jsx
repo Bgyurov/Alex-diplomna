@@ -14,8 +14,8 @@ export function Navigation() {
 
     return (
         <>
-            <div className="topnav">
-                <h1><Link className="home" to="/">CarAvenue</Link></h1>
+            <div className="topnav" style={{height: menuOpen ? 'auto': '50px'}}>
+                <h1><Link className="home" to="/">Mobile.UKTC</Link></h1>
                 <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
                 
                 <nav style={{ display: displayNav }}>

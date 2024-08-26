@@ -22,6 +22,8 @@ import NotFound from './components/NotFound/NotFound.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 import ProfileGuard from './guards/ProfileGuard.jsx';
 import { AdsProvider } from './contexts/AdsContext.jsx';
+
+
 function App() {
     const navigate = useNavigate()
     const [auth, setAuth] = usePersistedState('auth', {})
@@ -145,7 +147,7 @@ function App() {
                     </main>
                 </AdsProvider>
             </AuthContext.Provider>
-            <footer>
+            <footer >
 
                 <Footer />
             </footer>

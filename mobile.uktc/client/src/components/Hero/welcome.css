@@ -1,202 +1,211 @@
-#welcome-world {
-    width: auto;
-    padding-right: 15px;
-    padding-top: 7em;
-    justify-content: right;
-    padding-left: 15px;
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 20px; /* Регулирайте разстоянието според нуждите */
+}
 
-
-#welcome-world>img {
-    height: 70%;
-    width: 30%;
-    display: inline-block;
-    max-width: 30%; 
-    padding-left: auto;
+.welcome-message img {
+  width: auto;
+  height: 350px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .welcome-message h2 {
-    color: #ffffff;
-    font-size: 300%;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: uppercase;
-    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.922);
-    font-family: cursive;
-    
+  color: #ffffff;
+  font-size: 300%;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.922);
+  font-family: cursive;
 }
 
 .welcome-message h3 {
-    color: #ffffff;
-    font-size: 500%;
-    text-shadow: none;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: 0 2px 4.8px rgb(0, 0, 0);
-
-    font-family: cursive;
+  color: #ffffff;
+  font-size: 500%;
+  text-shadow: none;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 2px 4.8px rgb(0, 0, 0);
+  font-family: cursive;
 }
 
-#welcome-world>#home-page {
-    width: 50% fit-content;
-    margin: auto;
-    text-align: center;
+#welcome-world > #home-page {
+  width: 50% fit-content;
+  margin: auto;
+  text-align: center;
 }
 
 #home-page {
-    background-color: #6c6464d1;
-    box-shadow: 0px 0px 40px 0px;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 55px;
-    height: auto;
-    width: auto;
-    
+  background-color: #6c6464d1;
+  box-shadow: 0px 0px 40px 0px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 55px;
+  height: auto;
+  width: auto;
 }
-
 
 .ad {
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
-    padding: 20px; /* Adjust padding to reduce size */
-    margin: 0; /* Remove margin to allow flexbox to handle spacing */
-    background-position: center; /* Center the background image if used */
-    border-radius: 15px;
-    margin-left: 50px;
-    float: left;
-    height: auto; /* Adjust height as necessary */
-    color: rgb(238, 143, 121);
-    flex: 1 1 300px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0;
+  background-position: center;
+  border-radius: 15px;
+  margin-left: 50px;
+  float: left;
+  height: auto;
+  color: #54a8cc;
+  flex: 1 1 300px;
+  cursor: pointer;
 }
 
-.ad:hover{
-    color: rgb(236, 98, 67);
-    transition: 0.5s;
+.ad:hover {
+  color: rgb(110, 204, 245);
+  transition: 0.1s;
 }
 
 .wrapper-img {
-    width: 250px;
-    height: 150px;
-    display: inline-block;
-    border-radius: 5%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
+  width: 250px;
+  max-width: 250px;
+  height: 150px;
+  max-height: 150px;
+
+  display: inline-block;
+  border-radius: 5%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 
-.wrapper-img>img {
-    max-width: 100%;
+.wrapper-img > img {
+  max-width: 100%;
 }
 
 .ad h3 {
-    font-family: "Agency FB";
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all 0.5s ease-out;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: "Agency FB";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s ease-out;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .ad h4 {
-    font-family: "Agency FB";
-    font-size: 28px;
-    font-weight: 500;
-    line-height: normal;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all 0.5s ease-out;
-    text-align: center;
-    text-transform: uppercase;
+  font-family: "Agency FB";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s ease-out;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-
-
 .details-btn {
-    background-color: #5e5e5e;
-    font-size: 22px;
-    border-radius: 30px;
-    margin-top: 30px;
-    padding-top: 20px;
-    margin-top: 10px;
-    color: white;
-    padding: 0.9em 1.4em;
+  background-color: #5e5e5e;
+  font-size: 22px;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-top: 10px;
+  color: white;
+  padding: 0.9em 1.4em;
 }
 
 .data-buttons {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .btn.details-btn:hover {
-    background-color: rgb(192, 129, 117);
-    transition: 0.5s;
-    color: white;
+  background-color: rgb(110, 204, 245);
+  transition: 0.3s;
 }
 
 #home-page h1 {
-    color: #ffffff;
-    
-    text-align: center;
-    font-weight: 700;
-    font-size: 84px;
-    font-family: "Agency FB";
+  color: #ffffff;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 84px;
+  font-family: "Agency FB";
 }
 
 .no-articles {
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 60px;
-    font-family: "Agency FB";
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  font-family: "Agency FB";
 }
 @media screen and (max-width: 768px) {
-    .welcome-message h2 {
-        font-size: 24px;
-    }
+  .welcome-message h2 {
+    font-size: 24px;
+  }
+  .welcome-message img {
+    width: auto;
+    height: 120px;
+    min-height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    .welcome-message h3 {
-        font-size: 30px;
-    }
+#home-page h1{
+    font-size: 40px;
+}
+   
+  .welcome-message h3 {
+    font-size: 30px;
+  }
 
-    #home-page {
-        padding: 10px;
-    }
+  #home-page {
+    padding: 20px;
+  }
 
-    .ad {
-        flex-direction: column;
-        padding: 10px;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
+  .ad {
+    flex-direction: column;
+    float: none;
+    padding: 10px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 
-    .ad h3{
-        font-size: 30px;
-    }
-    .ad h4{
-        font-size: 24px;
-    }
+  .ad h3 {
+    font-size: 30px;
+  }
+  .ad h4 {
+    font-size: 24px;
+  }
 
-    .wrapper-img {
-        width: 90%; /* Larger in mobile view */
-    }
-    .data-buttons {
-        padding-top: 25px;
-        padding-bottom: 20px;
-    }
-
+  .wrapper-img {
+    min-width: 130px;
+  }
+  .data-buttons {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }

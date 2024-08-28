@@ -22,7 +22,6 @@
 
 .welcome-message h2 {
   color: #ffffff;
-  font-size: 300%;
   font-size: 55px;
   font-weight: 700;
   letter-spacing: normal;
@@ -34,14 +33,13 @@
 
 .welcome-message h3 {
   color: #ffffff;
-  font-size: 500%;
+  font-size: 60px;
   text-shadow: none;
   font-weight: 700;
   text-align: center;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: uppercase;
-  font-weight: 700;
   text-shadow: 0 2px 4.8px rgb(0, 0, 0);
   font-family: cursive;
 }

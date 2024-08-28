@@ -5,72 +5,125 @@
     border-radius: 10px;
     padding: 20px;
     height: auto;
-    width: 900px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#catalog-page>h1 {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  #catalog-page > h1 {
     color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 48px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 2.5rem; 
     font-weight: 700;
     margin-top: 10px;
     text-transform: uppercase;
     text-align: center;
-}
-
-.offer {
+  }
+  
+  .offer {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
-    max-width: 100%;
-    margin: 15px;
+    flex-direction: column; 
+    width: 100%;
+    max-width: 600px; 
+    margin: 15px auto;
     overflow: hidden;
-    width: 600px auto;
     min-height: 210px;
     height: auto;
-}
-
-.offer-info {
-    padding: 30px;
+  }
+  
+  .offer-info {
+    padding: 20px; 
     position: relative;
     width: 100%;
-}
-
-.offer-info>img {
-    height: 140px;
+  }
+  
+  .offer-info > img {
+    height: 100px;
+    width: 100px;
     position: absolute;
-    top: 30px;
-    right: 30px;
-    float: right;
+    top: 20px;
+    right: 20px;
     padding: 5px;
-    width: 140px;
-}
-
-.offer-info>h6 {
-    font-size: 13px;
+  }
+  
+  .offer-info > h6 {
+    font-size: 0.875rem;
     font-weight: 750;
     color: #161618;
-}
-
-.offer-info>h2 {
-    font-size: 20px;
+  }
+  
+  .offer-info > h2 {
+    font-size: 1.5rem; 
     font-weight: 750;
     color: #161618;
-}
-
-.details-button {
-    background-color: #2A265F;
+  }
+  
+  .details-button {
+    background-color: #2a265f;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     position: absolute;
-    bottom: 30px;
-    text-align: left;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
     letter-spacing: 1px;
-    padding: 10px;
-    margin-top: auto;
-    margin-left: 20px;
-}
+  }
+  
+  @media screen and (max-width: 768px) {
+    #catalog-page {
+      padding: 15px;
+      width: 95%; 
+    }
+  
+    #catalog-page > h1 {
+      font-size: 2rem;
+    }
+  
+    .offer {
+      flex-direction: column;
+      max-width: 100%; 
+      margin: 10px 0;
+    }
+  
+    .offer-info {
+      padding: 15px;
+    }
+  
+    .offer-info > img {
+      position: static;
+      margin: 10px auto;
+      display: block;
+    }
+  
+    .details-button {
+      position: static;
+      margin: 20px auto 0;
+      width: 90%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #catalog-page > h1 {
+      font-size: 1.5rem;
+    }
+  
+    .offer-info > h2 {
+      font-size: 1.25rem;
+    }
+  
+    .offer-info > h6 {
+      font-size: 0.75rem;
+    }
+  
+    .details-button {
+      font-size: 0.875rem;
+      padding: 8px 16px;
+    }
+  }
+  

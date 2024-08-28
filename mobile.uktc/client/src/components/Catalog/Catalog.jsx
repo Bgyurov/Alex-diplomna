@@ -20,6 +20,16 @@ export const Catalog = ()=>{
           <Skeleton variant="text" height={20} />
           <Skeleton variant="text" height={20} />
           <Skeleton variant="rectangular" height={300} />
+
+          <Skeleton variant="text" height={100} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="rectangular" height={300} />
+
+          <Skeleton variant="text" height={100} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="text" height={20} />
+          <Skeleton variant="rectangular" height={300} />
         </Stack>
       ) : (
         <>

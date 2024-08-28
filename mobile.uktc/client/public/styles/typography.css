@@ -7,10 +7,10 @@ html {
 *,
 *::before,
 *::after {
+    margin: 0 auto;
     padding: 0;
     box-sizing: inherit;
     line-height: 1.3;
-    margin:0 auto;
 }
 
 h1,

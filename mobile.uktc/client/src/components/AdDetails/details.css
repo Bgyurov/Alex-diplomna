@@ -1,68 +1,251 @@
 #vehicle-details {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 980px; /* Limits the width on larger screens */
-    margin: 30px auto; /* Reduced margin for smaller screens */
-    padding: 10px; /* Add padding for better edge spacing */
-    background-color: aliceblue;
+  position: relative;
+  display: block;
+  width: 90%; /* Заменихме фиксираната ширина с проценти */
+  max-width: 980px; /* Максимална ширина за по-големи екрани */
+  margin: 50px auto; /* Намалено за по-добър баланс */
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
 }
 
 #vehicle-details > h1 {
-    font-size: 36px; /* Smaller font size on smaller screens */
-    margin-bottom: 20px; /* Reduced margin */
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 3rem; /* Относителна единица за по-добра адаптивност */
+  font-weight: 700;
+  margin-bottom: 30px; /* Намалено за по-добър баланс */
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section {
+  position: relative;
+  width: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 20px; /* Добавено за по-добро подравняване */
+}
+
+.vehicle-header {
+  position: relative;
+  padding: 15px; /* Намалено за по-добра адаптивност */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.vehicle_header > h1 {
+  color: black;
+  margin-top: 5px;
+  font-size: 2rem; /* Относителна единица */
+  font-weight: 400;
+}
+
+.vehicle_header > h4 {
+  color: #555;
+  font-size: 1.5rem; /* Относителна единица */
+  font-weight: 400;
+}
+
+.specs,
+.price,
+.phone {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem; /* Относителна единица за по-добра адаптивност */
+  margin-bottom: 5px;
+}
+
+.specs {
+  background-color: #393d3f;
+  border: 1px solid rgba(218, 181, 181, 0.829);
+}
+
+.price {
+  background-color: #08506e;
+  border: 1px solid rgba(100, 210, 218, 0.829);
+}
+
+.phone {
+  background-color: #8aecb1;
+  border: 1px solid rgba(218, 181, 181, 0.829);
 }
 
 .vehicle-img {
-    width: 100%; /* Full width on mobile */
-    margin: 10px 0; /* Adjust margin */
-    height: auto; /* Maintain aspect ratio */
+  position: relative;
+  margin: 20px auto; /* Центриране на изображението */
+  width: 100%;
+  max-width: 400px; /* Ограничаване на ширината */
+  height: auto; /* Поддържане на аспектното съотношение */
+  border-radius: 5%;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
 }
 
-.info-section, .vehicle-header, .vehicle-summary, .text {
-    padding: 15px; /* Adjust padding */
+.vote-up {
+  background-color: #d8a53e;
+  padding: 14px;
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.specs, .price, .phone, .type {
-    font-size: 16px; /* Smaller font size for better readability */
-    padding: 5px; /* Smaller padding */
+.vote-up:hover {
+  background-color: #805c15;
 }
 
-.buttons, .button, .vote-up, .details {
-    width: 100%; /* Full width buttons */
-    font-size: 18px; /* Larger font size for readability */
-    padding: 10px; /* Adequate padding */
-    margin-top: 10px; /* Space out buttons */
+.thanks-for-vote {
+  display: inline-block;
+  margin-top: 15px;
+  color: #555;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #fcbf49;
+  border: 1px solid rgba(218, 181, 181, 0.829);
+  font-size: 1rem; /* Относителна единица */
 }
 
-.button, .vote-up, .details {
-    display: block; /* Stack buttons vertically */
+.info-section > .text {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 1.25rem; /* Относителна единица за по-добра адаптивност */
+  color: #545454;
 }
 
-@media (max-width: 768px) {
-    .info-section {
-        display: flex;
-        flex-direction: column; /* Stack vertically */
-        align-items: center; /* Center align items */
-        justify-content: center;
-        padding: 20px; /* Adequate padding */
-    }
+.vehicle-summary {
+  margin-top: 15px;
+  padding: 20px;
+  font-size: 1.25rem; /* Относителна единица за по-добра адаптивност */
+  color: #545454;
+}
 
-    .vehicle-header, .vehicle-summary {
-        width: 100%; /* Full width */
-    }
+.buttons {
+  text-align: center; /* Центриране на бутоните */
+  margin-top: 20px;
+}
 
-    .vehicle-header h1, .vehicle_header h4 {
-        font-size: 20px; /* Smaller font sizes */
-    }
+.button {
+  background-color: #54557b;
+  padding: 10px 20px;
+  font-size: 1.25rem; /* Относителна единица */
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .text {
-        font-size: 18px; /* Smaller font size for text */
-    }
+.button:hover {
+  background-color: #6f5d9c;
+}
 
-    .buttons {
-        text-align: center; /* Center align buttons */
-    }
+.details {
+  background-color: #fcbf49;
+  padding: 10px;
+  font-size: 1rem; /* Относителна единица */
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
 
-    .button, .vote-up, .details {
-        font-size: 16px; /* Adjust font size */
-    }
+.details:hover {
+  background-color: #805c15;
+}
+
+@media screen and (max-width: 768px) {
+  #vehicle-details {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  #vehicle-details > h1 {
+    font-size: 2.5rem;
+  }
+
+  .vehicle-header > h1 {
+    font-size: 1.75rem;
+  }
+
+  .vehicle-header > h4 {
+    font-size: 1.25rem;
+  }
+
+  .vehicle-img {
+    max-width: 300px;
+  }
+
+  .specs,
+  .thanks-for-vote {
+    font-size: 0.875rem;
+  }
+  span.price {
+    font-size: 1.2rem;
+  }
+
+  .phone {
+    margin-left: 100px;
+  }
+
+  .text,
+  .vehicle-summary {
+    font-size: 1rem;
+  }
+
+  .button,
+  .details,
+  .vote-up {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #vehicle-details {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  #vehicle-details > h1 {
+    font-size: 2rem;
+  }
+
+  .vehicle-header > h1 {
+    font-size: 1.5rem;
+  }
+
+  .vehicle-header > h4 {
+    font-size: 1rem;
+  }
+
+  .vehicle-img {
+    max-width: 250px;
+  }
+
+  .specs,
+  .price,
+  .phone,
+  .thanks-for-vote {
+    font-size: 0.75rem;
+  }
+
+  .text,
+  .vehicle-summary {
+    font-size: 0.875rem;
+  }
+
+  .button,
+  .details,
+  .vote-up {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
 }

@@ -3,6 +3,7 @@
   width: 650px;
   height: 650px;
   padding: 40px;
+  margin:0 auto;
   margin-top: 40px;
   border-radius: 50px;
   margin-bottom: 180px;
@@ -15,6 +16,8 @@
   position: relative;
   width: 650px;
   height: auto;
+  margin:0 auto;
+
   padding: 40px;
   border-radius: 50px;
   margin-top: 20px;
@@ -130,6 +133,7 @@ input#username:focus {
   #login-page {
     width: 430px;
     height: 620px;
+    
   }
 
   #register-page {
@@ -142,5 +146,133 @@ input#username:focus {
 
   .container {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #login-page {
+    width: 550px;
+    height: 600px;
+  }
+
+  #register-page {
+    width: 550px;
+    height: auto;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .container > h1 {
+    font-size: 3rem;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  .btn.submit {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #login-page {
+    width: 430px;
+    height: 580px;
+  }
+
+  #register-page {
+    width: 430px;
+    height: auto;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .container > h1 {
+    font-size: 2.5rem;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .btn.submit {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .registration-redirect {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #login-page {
+    width: 380px;
+    height: 550px;
+  }
+
+  #register-page {
+    width: 380px;
+    height: auto;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .container > h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 16px;
+   margin-bottom: 5px;
+
+  }
+
+  .btn.submit {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .registration-redirect {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #login-page {
+    width: 750px;
+    height: 750px;
+  }
+
+  #register-page {
+    width: 750px;
+    height: auto;
+  }
+
+  .container {
+    padding: 50px;
+  }
+
+  .container > h1 {
+    font-size: 4rem;
+  }
+
+  label {
+    font-size: 28px;
+  }
+
+  .btn.submit {
+    font-size: 26px;
+  }
+
+  .registration-redirect {
+    font-size: 20px;
   }
 }

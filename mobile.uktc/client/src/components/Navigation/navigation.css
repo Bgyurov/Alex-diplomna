@@ -2,6 +2,7 @@ body {
   background: linear-gradient(-0.80turn, #54a8cc, #ffffff);
   background-attachment: fixed;
   background-size: cover;
+  margin: 0 auto;
 }
 .topnav {
   overflow: hidden;
@@ -78,6 +79,7 @@ h1 {
     display: block; 
     position: relative;
     top: -60px;
+    
   }
 
   .topnav nav a {
@@ -88,6 +90,6 @@ h1 {
   .topnav h1,
   .topnav nav {
     float: none; 
-    text-align: center;
+    text-align: left;
   }
 }

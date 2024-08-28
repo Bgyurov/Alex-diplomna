@@ -1,105 +1,192 @@
 #search-page {
-    background-color: transparent;
-    box-shadow: 0px 0px 40px 0px;
-    overflow: hidden;
-    border-radius: 10px;
-    padding: 20px;
-    height: auto;
-    width: 900px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  background-color: transparent;
+  box-shadow: 0px 0px 40px 0px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
 }
 
-#search-page>h1 {
-    color: #fff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    margin-top: 10px;
-    text-transform: uppercase;
-    text-align: center;
+#search-page > h1 {
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
-#search-page>h2 {
-    color: #fff;
-    font-family: "Agency FB";
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 10px;
-    text-transform: uppercase;
-    text-align: center;
+
+#search-page > h2 {
+  color: #fff;
+  font-family: "Agency FB";
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
 }
-#search-page input[type="submit"]{
-    width: 60%;
+#search-page input[type="text"] {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #c0c2c5, inset -2px -2px 5px #ffffff;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  transition: all 0.3s ease;
 }
-#search-page input[type="submit"]:hover{
-    color:#2A265F;
+
+#search-page input:focus {
+    border: 2px solid #54a8cc;
+    background: linear-gradient(145deg, #e6f7ff, #cceeff);
+  }
+
+#search-page input[type="submit"] {
+  width: 60%;
+  margin: 10px auto;
+  display: block;
+}
+
+#search-page input[type="submit"]:hover {
+  color: #2a265f;
 }
 
 .offer {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    max-width: 100%;
-    margin: 15px;
-    overflow: hidden;
-    width: 600px auto;
-    min-height: 210px;
-    height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 15px auto;
+  overflow: hidden;
+  min-height: 210px;
+  height: auto;
 }
 
 .offer-info {
-    padding: 30px;
-    position: relative;
-    width: 100%;
+  padding: 20px;
+  position: relative;
+  width: 100%;
 }
 
-.offer-info>img {
-    height: 140px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    float: right;
-    padding: 5px;
-    width: 140px;
+.offer-info > img {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
 }
 
-.offer-info>h6 {
-    font-size: 13px;
-    font-weight: 750;
-    color: #161618;
+.offer-info > h6 {
+  font-size: 0.875rem;
+  font-weight: 750;
+  color: #161618;
 }
 
-.offer-info>h2 {
-    font-size: 20px;
-    font-weight: 750;
-    color: #161618;
+.offer-info > h2 {
+  font-size: 1.5rem;
+  font-weight: 750;
+  color: #161618;
 }
 
 .details-button {
-    background-color: #2A265F;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-size: 20px;
-    position: absolute;
-    bottom: 30px;
-    text-align: left;
-    letter-spacing: 1px;
-    padding: 10px;
-    margin-top: auto;
-    margin-left: 20px;
+  background-color: #2a265f;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  bottom: -50px;
+  left: 35px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
 }
-input[type="submit"]{
-   
-        margin-top: 30px;
-        background: #778e9c;
-        height: 60px;
-        border-radius: 20px;
-        color: white;
-        font-size: 26px;
-        cursor: pointer;
-        font-weight: 900;
-        transition: 0.5s;
-    }
-    
-  
+
+input[type="submit"] {
+  margin-top: 30px;
+  background: #778e9c;
+  height: 60px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.625rem;
+  cursor: pointer;
+  font-weight: 900;
+  transition: 0.5s;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #search-page {
+    padding: 15px;
+    width: 95%;
+  }
+
+  #search-page > h1 {
+    font-size: 2rem;
+  }
+
+  #search-page > h2 {
+    font-size: 1rem;
+  }
+
+  .offer {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .offer-info {
+    padding: 15px;
+  }
+
+  /* .offer-info > img {
+    position: static;
+    margin: 10px auto;
+    display: block;
+  } */
+
+  .details-button {
+    margin-left: 20px;
+    right: 90px;
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #search-page > h1 {
+    font-size: 1.8rem;
+  }
+
+  #search-page > h2 {
+    font-size: 1.275rem;
+    color: #778e9c;
+  }
+
+  .offer-info > h2 {
+    font-size: 1.25rem;
+  }
+
+  .offer-info > h6 {
+    font-size: 0.75rem;
+  }
+
+  label {
+  }
+
+  input[type="submit"] {
+    font-size: 1.25rem;
+    padding: 10px 15px;
+    margin-top: 40px;
+  }
+}

@@ -11,7 +11,6 @@ import { useNavigate } from "react-router-dom";
 import { useService } from "../../hooks/useService";
 import { AuthContext } from "../../contexts/AuthContext";
 import "./details.css";
-import { authServiceFactory } from "../../services/authService.tsx";
 import AdsContext from "../../contexts/AdsContext.jsx";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";

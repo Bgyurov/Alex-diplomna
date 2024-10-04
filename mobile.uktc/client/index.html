@@ -5,11 +5,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="public/styles/typography.css">
       <link rel="icon" type="image/x-icon" href="public/styles/favicon.ico">
-      <title>CarAvenue</title>
+      <title>Mobile.UKTC | Powerd By Alex Delev</title>
   </head>
   
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      import { changeTitle } from '/src/hooks/useDynamicHeading.js';
+      changeTitle();
+    </script>
   </body>
 </html>

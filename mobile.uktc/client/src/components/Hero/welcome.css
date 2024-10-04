@@ -58,7 +58,16 @@
   padding: 55px;
   height: auto;
   width: auto;
+
+  display: flex; /* Добавяме flexbox */
+  flex-wrap: wrap; /* Позволява елементите да се пренасят на нов ред при нужда */
+  justify-content: center; /* Центрира елементите хоризонтално */
+  align-items: flex-start; /* Подравнява елементите отгоре */
+  gap: 20px; /* Добавя разстояние между елементите */
 }
+
+
+
 
 .ad {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);

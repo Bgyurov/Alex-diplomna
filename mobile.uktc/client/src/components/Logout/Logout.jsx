@@ -18,9 +18,9 @@ export const Logout = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 onLogout();
-                setShouldRedirect(true); // Маркира излизането и пренасочването
+                setShouldRedirect(true);
             } else {
-                setShouldRedirect(true); // Пренасочва към началната страница, ако потребителят избере "Отказ"
+                setShouldRedirect(true); 
             }
         });
     }, [onLogout]);
@@ -29,5 +29,5 @@ export const Logout = () => {
         return <Navigate to="/" />;
     }
 
-    return null; // Връща null докато чакаме отговор от SweetAlert2
+    return null; 
 };

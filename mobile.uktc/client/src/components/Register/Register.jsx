@@ -18,6 +18,7 @@ export const Register = () => {
       <form id="register" method="POST" onSubmit={onSubmit}>
         <div className="container">
           <div className="brand-logo"></div>
+          <img src="/src/assets/logo.png" className="login-logo" alt="logo" />
           <h1>Register</h1>
 
           <label htmlFor="username">Username:</label>

@@ -16,6 +16,7 @@ export function Login() {
     <section id="login-page" className="auth">
       <form id="login" method="POST" onSubmit={onSubmit}>
         <div className="container">
+          <img src="/src/assets/logo.png" className="login-logo" alt="logo" />
           <h1>Login</h1>
           <label htmlFor="email">Email:</label>
           <input
